@@ -1,0 +1,24 @@
+1) Instalar Vagrant / Oracle VM VirtulBox
+
+2) Crear una carpeta para el proyecto y abrir una tabla de comandos
+
+3) Escribir: vagrant init mpintocruces/dsiubb
+
+4) Escribir: vagrant plugin install vagrant-vbguest
+
+5) Escribir: vagrant up --provider virtualbox
+
+5.5) Si se usa Windows, instalar msygit para usar SSH en Gitbash
+
+6) Escribir: vagrant SSH
+
+7) Al entrar a Wheezy, escribir: sudo nano /etc/apt/sources.list}
+
+8) Dentro del archivo escribir: deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main, se guarda con Control+O y se sale con Control+X
+
+9) en Wheezy escribir: 
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install postgresql-9.2 pgadmin3
+
+10) Escribir: sudo apt-get install phppgadmin php5-pgsql
